@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var sayi = Number(prompt("Lütfen 1'den büyük bir tamsayı sayı giriniz"));
+var bir = 1;
+var toplam = 0
+while (bir < sayi) {
+  toplam += (bir ** 2);
+  bir++
+}
+alert("Girilen sayı=" + sayi + "\n" + "Kareler toplamı=" + toplam);
+    </script>
+</body>
+</html>
+<!-- 
+const sayi=prompt("Lütfen 1den büyük bir tamsayı giriniz");
+let toplam=0;
+for(var i=1;i<sayi;i++) {
+    toplam+=i*i
+}
+console.log("Girilen sayi ="+sayi+" kareleri toplamı: "+toplam);
+ -->

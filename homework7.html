@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let personel = [{
+  isim: "Arda",
+  soyIsim: "Deniz",
+  maas: 12700,
+},
+{
+  isim: "Mert",
+  soyIsim: "Tan",
+  maas: 10500,
+},
+{
+  isim: "Bülent",
+  soyIsim: "Demir",
+  maas: 14500,
+}];
+var temp;
+for (var i = 0; i < personel.length; i++) {
+  for (var j = i + 1; j < personel.length; j++) { // küçükten büyüğe istesem < işaretini > yapardım
+    if (personel[i].maas < personel[j].maas) {
+      temp = personel[i];
+      personel[i] = personel[j];
+      personel[j] = temp;
+    }
+  }
+}
+console.log(personel);        
+    </script>
+</body>
+</html>
+<!-- 
+let personel4={
+  isim: "Arda",
+  soyIsim: "Deniz",
+  maas: 12700,
+};
+let personal5={
+  isim: "Mert",
+  soyIsim: "Tan",
+  maas: 10500,
+};
+let personal6={
+  isim: "Bülent",
+  soyIsim: "Demir",
+  maas: 14500,
+};
+// 1.yöntem: for döngüsü kullanmadan
+let buyukMaas=0;
+let dusukMaas=0;
+let ortaMaas=0;
+if(personel4.maas>personel5.maas && personel4.maas>personel6.maas) {
+buyukMaas=personel4;
+if(personel5.maas>personel6.maas) {
+  let dusukMaas=personel6;
+  let ortaMaas=personel5;
+} else {
+  let dusukMaas=personel5;
+  let ortaMaas=personel6;
+}
+} else if(personel6.maas>personel5.maas && personel6.maas>personel4.maas) {
+  buyukMaas=personel6;
+  if(personel5.maas>personel4.maas) {
+  let dusukMaas=personel4;
+  let ortaMaas=personel5;
+} else {
+  let dusukMaas=personel5;
+  let ortaMaas=personel4;
+}
+} else if(personel5.maas>personel6.maas && personel5.maas>personel4.maas) {
+  buyukMaas=personel5;
+  if(personel6.maas>personel4.maas) {
+  let dusukMaas=personel4;
+  let ortaMaas=personel6;
+} else {
+  let dusukMaas=personel6;
+  let ortaMaas=personel4;
+}
+} 
+console.log(yuksekMaas.isim,ortaMaas.isim,dusukMaas.isim);
+
+// 2.yöntem: for döngüsü ile
+let personel = [{
+  isim: "Arda",
+  soyIsim: "Deniz",
+  maas: 12700,
+},
+{
+  isim: "Mert",
+  soyIsim: "Tan",
+  maas: 10500,
+},
+{
+  isim: "Bülent",
+  soyIsim: "Demir",
+  maas: 14500,
+}];
+let temp;
+for(var i=0;i<personel.length;i++) {
+  for(var j=i+1;j<personel.length;i++) {
+    if(personel[i].maas<personel[j].maas) {
+      personel[i]=temp;
+      personel[i]=personel[j];
+      personel[j]=temp;
+    }
+  }
+}
+console.log(personel);
+ -->

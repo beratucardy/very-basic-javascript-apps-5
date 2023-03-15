@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var muzSayisi = 165
+var gunSayisi = 0
+do {
+  muzSayisi = muzSayisi - 4
+  gunSayisi++
+} while (muzSayisi > 4)
+if (muzSayisi < 4) {
+  alert("Maymun öldü");
+}
+alert(" Maymun " + gunSayisi + " gün hayatta kaldı");
+    </script>
+</body>
+</html>
+<!-- 
+let muzSayisi=165;
+let maymunAlive=true;
+let survivalDays=1;
+do {
+  muzSayisi-=4
+  survivalDays++;
+  if(muzSayisi<4) {
+    maymunAlive=false;
+    console.log("bugün "+survivalDays+".gun, yaşayamadı, muz bitti, maymun öldü");
+  }
+  else {
+    console.log("bugün "+survivalDays+" gun yaşadı");
+  }
+} while(maymunAlive)
+console.log("Toplam yaşadığı gün sayısı: "+(survivalDays-1));
+ -->

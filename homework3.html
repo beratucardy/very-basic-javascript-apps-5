@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var sayi = 0;
+for (var i = 1; i <= 5; i++) {
+  for (var k = 1; k <= i; k++) {
+    sayi+=k;
+  }
+  sayi += "\n";
+}
+console.log(sayi);
+    </script>
+</body>
+</html>
+<!-- 
+let mesaj="";
+for(var i=1;i<6;i++); {
+  for(var k=1;k<=i;k++) {
+    mesaj+=k+" ";
+  }
+  mesaj+="\n";
+}
+console.log(mesaj);
+ -->
+ <!-- 2.çözüm:
+let sayi = Number(prompt("bir sayı yazınız"));
+let mesaj = "";
+let sayac = 1;
+do {
+mesaj += sayac + " ";
+sayac++;
+console.log(mesaj);
+} while(sayac<=sayi);
+  -->
